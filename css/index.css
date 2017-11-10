@@ -1,0 +1,38 @@
+
+video {
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100;
+}
+
+
+div.contenedor{
+  background-color: rgba(113,219,250,0.8);
+  bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+}
+
+div.contenedor div.contenido {
+    padding: 0 15px;
+  border: 1px solid red
+}
+
+div.contenedor div.contenido div.row div.lel{
+  height: 600px;
+background-color: white
+}
+div.contenedor div.contenido div.row div.lel #particles{
+  height: 600px;
+border: 1px solid blue
+}
