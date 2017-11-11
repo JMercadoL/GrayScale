@@ -1,0 +1,114 @@
+div.contenedor{
+	width: 100%;
+	height: 100%;
+	padding: 25px 25px;
+	border: 3px solid red;
+  display: table;
+}
+
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;                        
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+div.centrado{
+	padding: 0 15px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -291px;
+margin-left: -533px;
+  width: 1066px;
+	height: 582px;
+
+}
+div.contenedorNav{
+  background-color: rgba(255,255,255,1);
+  padding: 0 !important;
+  height: auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.menuIzquierda{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.menuIzquierda div.list-group{
+  margin-bottom: 0;
+}
+div.menuIzquierda div.list-group>a{
+  margin-bottom: 0;
+}
+div.menuIzquierda div.list-group>a .glyphicon,
+div.menuIzquierda div.list-group>a .fa {
+  color: #308b9e;
+}
+div.menuIzquierda div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.menuIzquierda div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.menuIzquierda div.list-group>a.active,
+div.menuIzquierda div.list-group>a.active .glyphicon,
+div.menuIzquierda div.list-group>a.active .fa{
+  background-color: #308b9e;
+  background-image: #308b9e;
+  color: #ffffff;
+}
+
+div.menuIzquierda div.list-group>a.disabled,
+div.menuIzquierda div.list-group>a.disabled .glyphicon,
+div.menuIzquierda div.list-group>a.disabled .fa{
+  cursor: default;
+  background-color: #ccc;
+  background-image: #ccc;
+  color: #ffffff;
+}
+
+div.menuCentro{
+	height: 570px;
+	overflow: scroll;
+}
+div.menuCentro div.menuCentro-content:not(.active){
+  display: none;
+}
+div.menuDerecha{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+div.menuDerecha div.list-group{
+  margin-bottom: 0;
+}
+
+/*#myDIV {
+	margin-left: 5px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    -webkit-animation: mymove 5s ;
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    50% {border-radius: 50px;}
+}
+*/
