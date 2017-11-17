@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Handlee');
-
+video{
+position: relative;
+}
+.video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
 div.contenedor{
-padding: 0 15px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.9);
   width:100%;
   height: 100vh;
 }
-
-div.contenedor div.row div.centro{
+div.contenedor div.centro{
+  padding: 0 15px;
+  background-color: white;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -15,39 +27,285 @@ margin-top: -291px;
 margin-left: -500px;
   width: 1000px;
   height: 582px;
-  border: 1px solid red
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+}
+div.contenedor div.centro div.row{
+}
+div.contenedor div.centro div.row div.barra{
+  padding: 0;
+  position: relative;
+}
+div.contenedor div.centro div.row div.texto{
+  padding: 0;
+}
+div.contenedor div.centro div.row div.barra div.extremos{
+  padding: 0;
+  margin: 0 auto;
+}
+div.contenedor div.centro div.row div.barra div.extremos div.corazon-i .fa{
+  position: relative;
+top: 50%;
+left: 50%;
+margin-top: 28px;
+margin-left: -28px;
+  width: 56px;
+  height: 56px;
+}
+div.contenedor div.centro div.row div.barra div.extremos div.corazon-d .fa{
+  position: relative;
+top: 50%;
+left: 50%;
+margin-top: 28px;
+margin-left: -28px;
+  width: 56px;
+  height: 56px;
+}
+div.contenedor div.centro div.row div.barra div.extremos div.corazon-i .fa-heartbeat{
+
+    color: #FD6969;
+    -webkit-animation-name: corazonIzq; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+    animation-name: corazonIzq;
+    animation-duration: 4s infinite;
+}
+div.contenedor div.centro div.row div.barra div.extremos div.corazon-d .fa-heartbeat{
+
+    color: #FD6969;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 4s infinite;
 }
 
-div.contenido{
-  border: 1px solid aqua
+@-webkit-keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 300px}
 }
 
-div.contenedor div.row div.centro div.contenido h2{
+/* Standard syntax */
+@keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 300px}
+}
+
+
+
+@-webkit-keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -235px}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -235px}
+}
+
+div.contenedor div.centro div.row div.barra div.medio{
+}
+div.contenedor div.centro div.row div.barra div.medio h2{
 font-family: 'Amatic SC', cursive;
+font-size: 40px;
 color: #FF47F9
 }
 
-div.contenedor div.row div.centro div.contenido p{
+div.contenedor div.centro div.row div.barra div.medio p{
 font-family: 'Handlee', cursive;
 font-size: 18px;
 color: #576FFF
 }
-/*div.centrado video.love{
-padding: 0 15px;
+
+
+@media screen and (max-width:1080px) {
+
+div.contenedor{
+  background-color: rgba(255,255,255,0.9);
+  width:100%;
+  height: 100vh;
+  border: 1px solid black
+}
+div.contenedor div.centro{
+  padding: 0 15px;
+  background-color: white;
 position: absolute;
-margin-top: -291px;
-margin-left: -500px;
-  width: 1000px;
-  height: 582px;
-  border: 5px solid white
-}video {
-    background-size: cover;
-    bottom: 0;
-    height: auto;
-    min-height: 100%;
-    min-width: 100%;
-    position: fixed;
-    right: 0;
-    width: auto;
-    z-index: -100;
-}*/
+top: 50%;
+left: 50%;
+margin-top: -270px;
+margin-left: -390px;
+  width: 780px;
+  height: 540px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+}
+
+
+@-webkit-keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 200px}
+}
+
+/* Standard syntax */
+@keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 200px}
+}
+
+
+
+@-webkit-keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -135px}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -135px}
+}
+
+}
+
+
+@media screen and (max-width:800px) {
+
+div.contenedor{
+  background-color: rgba(255,255,255,0.9);
+  width:100%;
+  height: 100vh;
+  border: 1px solid black
+}
+div.contenedor div.centro{
+  padding: 0 15px;
+  background-color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -270px;
+margin-left: -350px;
+  width: 700px;
+  height: 540px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+}
+
+
+@-webkit-keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 200px}
+}
+
+/* Standard syntax */
+@keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 200px}
+}
+
+
+
+@-webkit-keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -135px}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -135px}
+}
+
+}
+
+
+
+
+@media screen and (max-width:650px) {
+
+div.contenedor{
+  background-color: rgba(255,255,255,0.9);
+  width:100%;
+  height: 100vh;
+  border: 1px solid black
+}
+div.contenedor div.centro{
+  padding: 0 15px;
+  background-color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -270px;
+margin-left: -275px;
+  width: 550px;
+  height: 540px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+}
+
+
+@-webkit-keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 100px}
+}
+
+/* Standard syntax */
+@keyframes corazonIzq {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: 100px}
+}
+
+
+
+@-webkit-keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -65px}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {opacity: 0; left: 0px}
+    50% {opacity: 0.5;}
+    100% {opacity: 1; left: -65px}
+}
+
+}
