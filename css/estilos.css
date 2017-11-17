@@ -18,6 +18,7 @@ div.contenedor{
   height: 100vh;
 }
 div.contenedor div.centro{
+  overflow: scroll;
   padding: 0 15px;
   background-color: white;
 position: absolute;
@@ -41,6 +42,9 @@ div.contenedor div.centro div.row{
 div.contenedor div.centro div.row div.barra{
   padding: 0;
   position: relative;
+}
+div.contenedor div.centro div.row div.linea{
+  padding: 0;
 }
 div.contenedor div.centro div.row div.texto{
   padding: 0;
@@ -135,7 +139,6 @@ div.contenedor{
   background-color: rgba(255,255,255,0.9);
   width:100%;
   height: 100vh;
-  border: 1px solid black
 }
 div.contenedor div.centro{
   padding: 0 15px;
@@ -195,7 +198,6 @@ div.contenedor{
   background-color: rgba(255,255,255,0.9);
   width:100%;
   height: 100vh;
-  border: 1px solid black
 }
 div.contenedor div.centro{
   padding: 0 15px;
@@ -257,7 +259,6 @@ div.contenedor{
   background-color: rgba(255,255,255,0.9);
   width:100%;
   height: 100vh;
-  border: 1px solid black
 }
 div.contenedor div.centro{
   padding: 0 15px;
@@ -319,7 +320,6 @@ div.contenedor{
   background-color: rgba(255,54,255,0.9);
   width:100%;
   height: 100vh;
-  border: 1px solid black
 }
 div.contenedor div.centro{
   padding: 0 15px;
