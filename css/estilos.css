@@ -280,35 +280,39 @@ margin-left: -275px;
 }
 
 
+
 @-webkit-keyframes corazonIzq {
-    0% {opacity: 0; left: 0px}
+    0% {opacity: 0;}
     50% {opacity: 0.5;}
-    100% {opacity: 1; left: 100px}
+    100% {opacity: 1;}
 }
 
 /* Standard syntax */
 @keyframes corazonIzq {
-    0% {opacity: 0; left: 0px}
+    0% {opacity: 0;}
     50% {opacity: 0.5;}
-    100% {opacity: 1; left: 100px}
+    100% {opacity: 1;}
 }
 
 
 
 @-webkit-keyframes example {
-    0% {opacity: 0; left: 0px}
+    0% {opacity: 0;}
     50% {opacity: 0.5;}
-    100% {opacity: 1; left: -65px}
+    100% {opacity: 1;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0% {opacity: 0; left: 0px}
+    0% {opacity: 0;}
     50% {opacity: 0.5;}
-    100% {opacity: 1; left: -65px}
+    100% {opacity: 1;}
 }
 
 }
+
+
+
 @media screen and (max-width:400px) {
 
 div.contenedor{
