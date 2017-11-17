@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Handlee');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Handlee|Caveat+Brush');
 video{
 position: relative;
 }
@@ -132,6 +132,11 @@ font-size: 18px;
 color: #576FFF
 }
 
+div.descripcion p{
+  font-family: 'Caveat Brush', cursive;
+font-size: 28px;
+color: #6594FF
+}
 
 @media screen and (max-width:1080px) {
 
